@@ -1,0 +1,16 @@
+{
+  "fs_bloco_fundamental": 4096,
+  "fs_bloco_io_stat": 4096,
+  "pg_block_size": 8192,
+  "leitura": {
+    "modo_leitura": "O_DIRECT",
+    "arquivo_mb": 256.0,
+    "blocos_sequenciais": 32768,
+    "blocos_aleatorios": 20000,
+    "seq_mb_s": 188.36900619462634,
+    "aleatorio_iops": 28422.01719405849,
+    "tempo_por_bloco_seq_us": 41.47444506835684,
+    "tempo_por_bloco_aleatorio_us": 35.183991100007006,
+    "razao_custo_aleatorio_sequencial": 0.8483293999960189
+  }
+}

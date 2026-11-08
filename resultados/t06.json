@@ -1,0 +1,9 @@
+{
+  "relpages": 443,
+  "reltuples": 100000.0,
+  "bytes": 3629056,
+  "block_size": 8192,
+  "paginas_pelo_tamanho": 443,
+  "tuplas": 100000,
+  "tuplas_por_pagina": 225.73363431151242
+}

@@ -1,17 +1,21 @@
-"""T3 — TPC-H carregado.
+"""T3 - TPC-H carregado: linhas e tamanho de cada uma das 8 tabelas."""
+from common import conectar, salvar
+from params import carregar
 
-Registre em resultados/t03.json:
-  sf, tabelas: {<tabela>: {linhas, bytes_tabela, bytes_total}} para as 8 tabelas do TPC-H.
-(A carga em si e feita por 'make load'; aqui se confere e documenta o que foi carregado.)
-"""
-from common import conectar, salvar  # noqa: F401
-from params import carregar  # noqa: F401
+TABELAS = ["region", "nation", "part", "supplier", "partsupp", "customer", "orders", "lineitem"]
 
 
 def main():
     p = carregar()
-    # TODO: implemente a tarefa e grave o resultado com salvar("t03", ...)
-    raise NotImplementedError("t03_tpch")
+    saida = {}
+    with conectar() as con, con.cursor() as cur:
+        for t in TABELAS:
+            cur.execute(f"SELECT count(*) FROM {t}")
+            linhas = cur.fetchone()[0]
+            cur.execute("SELECT pg_relation_size(%s::regclass), pg_total_relation_size(%s::regclass)", (t, t))
+            tabela, total = cur.fetchone()
+            saida[t] = {"linhas": linhas, "bytes_tabela": tabela, "bytes_total": total}
+    salvar("t03", {"sf": p["sf"], "tabelas": saida})
 
 
 if __name__ == "__main__":

@@ -1,0 +1,45 @@
+{
+  "sf": 0.1,
+  "tabelas": {
+    "region": {
+      "linhas": 5,
+      "bytes_tabela": 8192,
+      "bytes_total": 24576
+    },
+    "nation": {
+      "linhas": 25,
+      "bytes_tabela": 8192,
+      "bytes_total": 40960
+    },
+    "part": {
+      "linhas": 20000,
+      "bytes_tabela": 3407872,
+      "bytes_total": 3915776
+    },
+    "supplier": {
+      "linhas": 1000,
+      "bytes_tabela": 360448,
+      "bytes_total": 450560
+    },
+    "partsupp": {
+      "linhas": 80000,
+      "bytes_tabela": 14352384,
+      "bytes_total": 17768448
+    },
+    "customer": {
+      "linhas": 15000,
+      "bytes_tabela": 2957312,
+      "bytes_total": 3473408
+    },
+    "orders": {
+      "linhas": 150000,
+      "bytes_tabela": 21692416,
+      "bytes_total": 26402816
+    },
+    "lineitem": {
+      "linhas": 600572,
+      "bytes_tabela": 92471296,
+      "bytes_total": 119963648
+    }
+  }
+}

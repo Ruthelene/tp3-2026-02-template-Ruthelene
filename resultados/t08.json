@@ -1,0 +1,30 @@
+[
+  {
+    "n": 100000,
+    "valor": 50,
+    "tempo_consulta_ms": 0.407,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "tempo_criacao_ms": 66.16956499965454,
+    "tempo_recriacao_ms": 80.39025400012179,
+    "indice": {
+      "paginas": 90,
+      "altura": 1,
+      "paginas_folha": 88,
+      "densidade_media_folha": 86.29
+    }
+  },
+  {
+    "n": 1000000,
+    "valor": 50,
+    "tempo_consulta_ms": 4.554,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "tempo_criacao_ms": 998.7374479997015,
+    "tempo_recriacao_ms": 909.2931609993684,
+    "indice": {
+      "paginas": 854,
+      "altura": 2,
+      "paginas_folha": 847,
+      "densidade_media_folha": 89.5
+    }
+  }
+]

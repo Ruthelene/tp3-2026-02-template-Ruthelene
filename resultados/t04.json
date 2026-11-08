@@ -1,0 +1,231 @@
+{
+  "q01": {
+    "nos": [
+      "Aggregate",
+      "Gather Merge",
+      "Sort",
+      "Aggregate",
+      "Seq Scan"
+    ],
+    "custo_estimado": 24014.63,
+    "linhas_estimadas": 6,
+    "linhas_reais": 4,
+    "buffers": {
+      "hit": 2372,
+      "read": 8930
+    },
+    "tempo_execucao_ms": 658.423,
+    "acesso_dominante": "Seq Scan em lineitem",
+    "juncoes": []
+  },
+  "q03": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Gather",
+      "Nested Loop",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Seq Scan",
+      "Index Scan"
+    ],
+    "custo_estimado": 22478.73,
+    "linhas_estimadas": 31680,
+    "linhas_reais": 1164,
+    "buffers": {
+      "hit": 53105,
+      "read": 8772
+    },
+    "tempo_execucao_ms": 189.134,
+    "acesso_dominante": "Seq Scan em orders",
+    "juncoes": [
+      "Nested Loop",
+      "Hash Join"
+    ]
+  },
+  "q05": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Gather Merge",
+      "Aggregate",
+      "Sort",
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Nested Loop",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Seq Scan",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan",
+      "Hash",
+      "Seq Scan"
+    ],
+    "custo_estimado": 12817.73,
+    "linhas_estimadas": 25,
+    "linhas_reais": 5,
+    "buffers": {
+      "hit": 23056,
+      "read": 850
+    },
+    "tempo_execucao_ms": 49.433,
+    "acesso_dominante": "Seq Scan em orders",
+    "juncoes": [
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join"
+    ]
+  },
+  "q11": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Nested Loop",
+      "Nested Loop",
+      "Seq Scan",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan",
+      "Aggregate",
+      "Nested Loop",
+      "Nested Loop",
+      "Seq Scan",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan"
+    ],
+    "custo_estimado": 1045.77,
+    "linhas_estimadas": 1067,
+    "linhas_reais": 18,
+    "buffers": {
+      "hit": 8698,
+      "read": 40
+    },
+    "tempo_execucao_ms": 15.326,
+    "acesso_dominante": "Index Scan em partsupp",
+    "juncoes": [
+      "Nested Loop",
+      "Nested Loop",
+      "Nested Loop",
+      "Nested Loop"
+    ]
+  },
+  "q14": {
+    "nos": [
+      "Aggregate",
+      "Gather",
+      "Aggregate",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Seq Scan"
+    ],
+    "custo_estimado": 16979.21,
+    "linhas_estimadas": 1,
+    "linhas_reais": 1,
+    "buffers": {
+      "hit": 10596,
+      "read": 2062
+    },
+    "tempo_execucao_ms": 95.9,
+    "acesso_dominante": "Seq Scan em part",
+    "juncoes": [
+      "Hash Join"
+    ]
+  },
+  "q19": {
+    "nos": [
+      "Aggregate",
+      "Nested Loop",
+      "Seq Scan",
+      "Index Scan"
+    ],
+    "custo_estimado": 7066.14,
+    "linhas_estimadas": 1,
+    "linhas_reais": 1,
+    "buffers": {
+      "hit": 1656,
+      "read": 289
+    },
+    "tempo_execucao_ms": 14.535,
+    "acesso_dominante": "Seq Scan em part",
+    "juncoes": [
+      "Nested Loop"
+    ]
+  },
+  "q20": {
+    "nos": [
+      "Sort",
+      "Hash Join",
+      "Nested Loop",
+      "Seq Scan",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Hash",
+      "Nested Loop",
+      "Seq Scan",
+      "Index Scan",
+      "Aggregate",
+      "Index Scan"
+    ],
+    "custo_estimado": 8853.21,
+    "linhas_estimadas": 11,
+    "linhas_reais": 20,
+    "buffers": {
+      "hit": 9226,
+      "read": 1537
+    },
+    "tempo_execucao_ms": 26.826,
+    "acesso_dominante": "Index Scan em lineitem",
+    "juncoes": [
+      "Hash Join",
+      "Nested Loop",
+      "Nested Loop"
+    ]
+  },
+  "q21": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Sort",
+      "Nested Loop",
+      "Nested Loop",
+      "Gather",
+      "Nested Loop",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Nested Loop",
+      "Seq Scan",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan",
+      "Index Scan",
+      "Index Scan"
+    ],
+    "custo_estimado": 18189.44,
+    "linhas_estimadas": 1,
+    "linhas_reais": 34,
+    "buffers": {
+      "hit": 67308,
+      "read": 3315
+    },
+    "tempo_execucao_ms": 183.479,
+    "acesso_dominante": "Seq Scan em lineitem",
+    "juncoes": [
+      "Nested Loop",
+      "Nested Loop",
+      "Nested Loop",
+      "Hash Join",
+      "Nested Loop"
+    ]
+  }
+}

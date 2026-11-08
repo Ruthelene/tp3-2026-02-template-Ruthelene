@@ -1,0 +1,24 @@
+{
+  "cpu_modelo": "AMD EPYC 7763 64-Core Processor",
+  "cpu_nucleos": 2,
+  "ram_mb": 7942,
+  "disco_bytes": 33636024320,
+  "caches": {
+    "L1d cache": "32 KiB (1 instance)",
+    "L1i cache": "32 KiB (1 instance)",
+    "L2 cache": "512 KiB (1 instance)",
+    "L3 cache": "32 MiB (1 instance)"
+  },
+  "so": "Debian GNU/Linux 13 (trixie)",
+  "kernel": "6.8.0-1064-azure",
+  "postgres": {
+    "server_version": "16.15 (Debian 16.15-1.pgdg13+2)",
+    "block_size": "8192",
+    "shared_buffers": "128MB",
+    "effective_cache_size": "4GB",
+    "seq_page_cost": "1",
+    "random_page_cost": "4",
+    "work_mem": "4MB",
+    "default_statistics_target": "100"
+  }
+}

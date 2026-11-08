@@ -1,0 +1,50 @@
+[
+  {
+    "fillfactor": 70,
+    "tempo_criacao_ms": 1206.494783999915,
+    "tempo_consulta_ms": 5.036,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "indice": {
+      "paginas": 1084,
+      "altura": 2,
+      "paginas_folha": 1076,
+      "densidade_media_folha": 70.54
+    }
+  },
+  {
+    "fillfactor": 85,
+    "tempo_criacao_ms": 1063.9026150001882,
+    "tempo_consulta_ms": 4.487,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "indice": {
+      "paginas": 854,
+      "altura": 2,
+      "paginas_folha": 847,
+      "densidade_media_folha": 89.5
+    }
+  },
+  {
+    "fillfactor": 95,
+    "tempo_criacao_ms": 1289.7767310005293,
+    "tempo_consulta_ms": 5.263,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "indice": {
+      "paginas": 854,
+      "altura": 2,
+      "paginas_folha": 847,
+      "densidade_media_folha": 89.5
+    }
+  },
+  {
+    "fillfactor": 100,
+    "tempo_criacao_ms": 891.9073329998355,
+    "tempo_consulta_ms": 4.352,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "indice": {
+      "paginas": 854,
+      "altura": 2,
+      "paginas_folha": 847,
+      "densidade_media_folha": 89.5
+    }
+  }
+]

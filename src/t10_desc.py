@@ -1,16 +1,10 @@
-"""T10 — Indice descendente.
-
-Repita T9 com CREATE INDEX ... ON t(v DESC NULLS FIRST) e fillfactors [100] + params['fillfactors'].
-resultados/t10.json: mesmo formato de t09.
-"""
-from common import conectar, salvar  # noqa: F401
-from params import carregar  # noqa: F401
+"""T10 - Indice descendente: repete o T9 com v DESC NULLS FIRST e fillfactors [100] + individuais."""
+from params import carregar
+from t09_fillfactor import rodar
 
 
 def main():
-    p = carregar()
-    # TODO: implemente a tarefa e grave o resultado com salvar("t10", ...)
-    raise NotImplementedError("t10_desc")
+    rodar(" DESC NULLS FIRST", [100] + carregar()["fillfactors"], "t10")
 
 
 if __name__ == "__main__":

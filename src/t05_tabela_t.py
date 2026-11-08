@@ -1,17 +1,18 @@
-"""T5 — Tabela t.
-
-Crie t(k serial primary key, v integer) com 100.000 tuplas, v = trunc(random() * t_cardinalidade_v),
-chamando SELECT setseed(t_seed) antes do INSERT (valores em params.json).
-Registre em resultados/t05.json: primeiras_10 (k, v ordenado por k), soma_v, tuplas.
-"""
-from common import conectar, salvar  # noqa: F401
-from params import carregar  # noqa: F401
+"""T5 - Tabela t com 100.000 tuplas (seed individual)."""
+from common import conectar, salvar
+from params import carregar
+from tabela_t import criar_t
 
 
 def main():
     p = carregar()
-    # TODO: implemente a tarefa e grave o resultado com salvar("t05", ...)
-    raise NotImplementedError("t05_tabela_t")
+    with conectar() as con, con.cursor() as cur:
+        criar_t(cur, 100_000, p["t_seed"], p["t_cardinalidade_v"])
+        cur.execute("SELECT k, v FROM t ORDER BY k LIMIT 10")
+        primeiras = [list(x) for x in cur.fetchall()]
+        cur.execute("SELECT sum(v), count(*) FROM t")
+        soma, n = cur.fetchone()
+    salvar("t05", {"primeiras_10": primeiras, "soma_v": int(soma), "tuplas": n})
 
 
 if __name__ == "__main__":
