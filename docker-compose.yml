@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: tp3
+      POSTGRES_PASSWORD: tp3
+      POSTGRES_DB: tp3
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tp3 -d tp3"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  app:
+    build: .
+    image: tp3
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGHOST: db
+      PGUSER: tp3
+      PGPASSWORD: tp3
+      PGDATABASE: tp3
+    volumes:
+      - .:/app
+volumes:
+  pgdata:
