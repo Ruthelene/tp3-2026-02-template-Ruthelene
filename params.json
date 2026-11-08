@@ -1,0 +1,38 @@
+{
+  "matricula": "22552011",
+  "sf": 0.1,
+  "tpch_consultas": [
+    1,
+    3,
+    5,
+    11,
+    14,
+    19,
+    20,
+    21
+  ],
+  "qgen_seed": 567059,
+  "t_seed": -0.980958,
+  "t_cardinalidade_v": 100,
+  "fillfactors": [
+    70,
+    85,
+    95,
+    100
+  ],
+  "movie_titulo_alvo": "American Beauty",
+  "movie_votos_baixo": 1000,
+  "movie_votos_alto": 35000,
+  "movie_letra_prefixo": "C",
+  "movie_letra_sufixo": "I",
+  "assentos": 120,
+  "tempo_escolha_s": 0.1,
+  "agentes": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10
+  ]
+}
