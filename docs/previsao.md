@@ -60,4 +60,3 @@ T15 (letras C e I):
   tempo cai quase em 1/k, com poucas tentativas extras. Deve ser a mais rápida.
 - Versão b em SERIALIZABLE: janelas curtas, poucas falhas; tempo próximo ao de b/READ COMMITTED,
   um pouco acima por causa de abortos ocasionais.
-EOF
