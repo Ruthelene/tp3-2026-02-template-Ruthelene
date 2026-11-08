@@ -1,0 +1,390 @@
+{
+  "assentos": 120,
+  "tempo_escolha_s": 0.1,
+  "experimentos": [
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 1,
+      "tempo_total_s": 12.282123431999935,
+      "reservas": 120,
+      "tentativas_max": 1,
+      "tentativas_min": 1,
+      "tentativas_media": 1.0,
+      "tentativas_total": 120,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 2,
+      "tempo_total_s": 6.36256760499964,
+      "reservas": 120,
+      "tentativas_max": 2,
+      "tentativas_min": 1,
+      "tentativas_media": 1.025,
+      "tentativas_total": 123,
+      "conflitos": {
+        "assento_tomado": 3,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 4,
+      "tempo_total_s": 3.4982498320005107,
+      "reservas": 120,
+      "tentativas_max": 3,
+      "tentativas_min": 1,
+      "tentativas_media": 1.1,
+      "tentativas_total": 132,
+      "conflitos": {
+        "assento_tomado": 12,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 6,
+      "tempo_total_s": 2.471403903000464,
+      "reservas": 120,
+      "tentativas_max": 4,
+      "tentativas_min": 1,
+      "tentativas_media": 1.1083333333333334,
+      "tentativas_total": 133,
+      "conflitos": {
+        "assento_tomado": 13,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 8,
+      "tempo_total_s": 2.0491915969996626,
+      "reservas": 120,
+      "tentativas_max": 5,
+      "tentativas_min": 1,
+      "tentativas_media": 1.2083333333333333,
+      "tentativas_total": 145,
+      "conflitos": {
+        "assento_tomado": 25,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "read_committed",
+      "k": 10,
+      "tempo_total_s": 1.6513807179999276,
+      "reservas": 120,
+      "tentativas_max": 3,
+      "tentativas_min": 1,
+      "tentativas_media": 1.2166666666666666,
+      "tentativas_total": 146,
+      "conflitos": {
+        "assento_tomado": 26,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 1,
+      "tempo_total_s": 12.263184288999582,
+      "reservas": 120,
+      "tentativas_max": 1,
+      "tentativas_min": 1,
+      "tentativas_media": 1.0,
+      "tentativas_total": 120,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 2,
+      "tempo_total_s": 12.28064666299997,
+      "reservas": 120,
+      "tentativas_max": 120,
+      "tentativas_min": 1,
+      "tentativas_media": 2.0,
+      "tentativas_total": 240,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 120,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 4,
+      "tempo_total_s": 12.419383939999534,
+      "reservas": 120,
+      "tentativas_max": 118,
+      "tentativas_min": 1,
+      "tentativas_media": 3.9833333333333334,
+      "tentativas_total": 478,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 358,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 6,
+      "tempo_total_s": 12.459588528000495,
+      "reservas": 120,
+      "tentativas_max": 119,
+      "tentativas_min": 1,
+      "tentativas_media": 5.933333333333334,
+      "tentativas_total": 712,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 592,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 8,
+      "tempo_total_s": 12.509355333000713,
+      "reservas": 120,
+      "tentativas_max": 121,
+      "tentativas_min": 1,
+      "tentativas_media": 7.866666666666666,
+      "tentativas_total": 944,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 824,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "a",
+      "isolamento": "serializable",
+      "k": 10,
+      "tempo_total_s": 12.615174047000437,
+      "reservas": 120,
+      "tentativas_max": 124,
+      "tentativas_min": 1,
+      "tentativas_media": 9.816666666666666,
+      "tentativas_total": 1178,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 1058,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 1,
+      "tempo_total_s": 12.329858106999382,
+      "reservas": 120,
+      "tentativas_max": 1,
+      "tentativas_min": 1,
+      "tentativas_media": 1.0,
+      "tentativas_total": 120,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 2,
+      "tempo_total_s": 6.38441708099981,
+      "reservas": 120,
+      "tentativas_max": 2,
+      "tentativas_min": 1,
+      "tentativas_media": 1.025,
+      "tentativas_total": 123,
+      "conflitos": {
+        "assento_tomado": 3,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 4,
+      "tempo_total_s": 3.501784971000234,
+      "reservas": 120,
+      "tentativas_max": 4,
+      "tentativas_min": 1,
+      "tentativas_media": 1.1,
+      "tentativas_total": 132,
+      "conflitos": {
+        "assento_tomado": 12,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 6,
+      "tempo_total_s": 2.580801785999938,
+      "reservas": 120,
+      "tentativas_max": 3,
+      "tentativas_min": 1,
+      "tentativas_media": 1.175,
+      "tentativas_total": 141,
+      "conflitos": {
+        "assento_tomado": 21,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 8,
+      "tempo_total_s": 1.9618963660004738,
+      "reservas": 120,
+      "tentativas_max": 3,
+      "tentativas_min": 1,
+      "tentativas_media": 1.1833333333333333,
+      "tentativas_total": 142,
+      "conflitos": {
+        "assento_tomado": 22,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "read_committed",
+      "k": 10,
+      "tempo_total_s": 1.690198293999856,
+      "reservas": 120,
+      "tentativas_max": 4,
+      "tentativas_min": 1,
+      "tentativas_media": 1.175,
+      "tentativas_total": 141,
+      "conflitos": {
+        "assento_tomado": 21,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 1,
+      "tempo_total_s": 12.312283858000228,
+      "reservas": 120,
+      "tentativas_max": 1,
+      "tentativas_min": 1,
+      "tentativas_media": 1.0,
+      "tentativas_total": 120,
+      "conflitos": {
+        "assento_tomado": 0,
+        "falha_serializacao": 0,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 2,
+      "tempo_total_s": 8.20607656500033,
+      "reservas": 120,
+      "tentativas_max": 4,
+      "tentativas_min": 1,
+      "tentativas_media": 1.3166666666666667,
+      "tentativas_total": 158,
+      "conflitos": {
+        "assento_tomado": 4,
+        "falha_serializacao": 34,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 4,
+      "tempo_total_s": 5.648626752999917,
+      "reservas": 120,
+      "tentativas_max": 8,
+      "tentativas_min": 1,
+      "tentativas_media": 1.7916666666666667,
+      "tentativas_total": 215,
+      "conflitos": {
+        "assento_tomado": 10,
+        "falha_serializacao": 85,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 6,
+      "tempo_total_s": 3.485456293000425,
+      "reservas": 120,
+      "tentativas_max": 6,
+      "tentativas_min": 1,
+      "tentativas_media": 1.575,
+      "tentativas_total": 189,
+      "conflitos": {
+        "assento_tomado": 16,
+        "falha_serializacao": 53,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 8,
+      "tempo_total_s": 2.9795254370001203,
+      "reservas": 120,
+      "tentativas_max": 10,
+      "tentativas_min": 1,
+      "tentativas_media": 1.8166666666666667,
+      "tentativas_total": 218,
+      "conflitos": {
+        "assento_tomado": 19,
+        "falha_serializacao": 79,
+        "deadlock": 0
+      }
+    },
+    {
+      "versao": "b",
+      "isolamento": "serializable",
+      "k": 10,
+      "tempo_total_s": 3.4222489730000234,
+      "reservas": 120,
+      "tentativas_max": 11,
+      "tentativas_min": 1,
+      "tentativas_media": 2.4583333333333335,
+      "tentativas_total": 295,
+      "conflitos": {
+        "assento_tomado": 22,
+        "falha_serializacao": 153,
+        "deadlock": 0
+      }
+    }
+  ]
+}

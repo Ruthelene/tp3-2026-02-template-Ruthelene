@@ -1,0 +1,47 @@
+[
+  {
+    "indice": "movie_key",
+    "tabela": "movie",
+    "atributo": "id",
+    "altura": 1,
+    "max_chaves_por_bloco_folha": 380,
+    "media_chaves_por_bloco_folha": 369.6,
+    "blocos_folha": 5,
+    "media_blocos_folha_por_chave": 1.0,
+    "media_blocos_dados_por_chave": 1.0,
+    "linhas": 1844,
+    "chaves_distintas": 1844,
+    "linhas_por_chave": 1.0,
+    "blocos_da_tabela": 15
+  },
+  {
+    "indice": "movie_title",
+    "tabela": "movie",
+    "atributo": "title",
+    "altura": 1,
+    "max_chaves_por_bloco_folha": 238,
+    "media_chaves_por_bloco_folha": 185.0,
+    "blocos_folha": 10,
+    "media_blocos_folha_por_chave": 1.0,
+    "media_blocos_dados_por_chave": 1.005455537370431,
+    "linhas": 1844,
+    "chaves_distintas": 1833,
+    "linhas_por_chave": 1.0060010911074742,
+    "blocos_da_tabela": 15
+  },
+  {
+    "indice": "movie_votes",
+    "tabela": "movie",
+    "atributo": "votes",
+    "altura": 1,
+    "max_chaves_por_bloco_folha": 214,
+    "media_chaves_por_bloco_folha": 169.22222222222223,
+    "blocos_folha": 9,
+    "media_blocos_folha_por_chave": 1.0,
+    "media_blocos_dados_por_chave": 1.0033760972316004,
+    "linhas": 1844,
+    "chaves_distintas": 1481,
+    "linhas_por_chave": 1.2451046590141797,
+    "blocos_da_tabela": 15
+  }
+]

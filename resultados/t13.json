@@ -1,0 +1,29 @@
+{
+  "max": {
+    "sql": "SELECT title FROM movie WHERE votes >= (SELECT MAX(votes) FROM movie)",
+    "resultado": [
+      "Star Wars"
+    ],
+    "nos": [
+      "Index Scan",
+      "Result",
+      "Limit",
+      "Index Only Scan"
+    ],
+    "custo": 35.37,
+    "tempo_ms": 0.11
+  },
+  "all": {
+    "sql": "SELECT title FROM movie WHERE votes >= ALL (SELECT votes FROM movie)",
+    "resultado": [
+      "Star Wars"
+    ],
+    "nos": [
+      "Seq Scan",
+      "Materialize",
+      "Seq Scan"
+    ],
+    "custo": 43620.99,
+    "tempo_ms": 1.239
+  }
+}

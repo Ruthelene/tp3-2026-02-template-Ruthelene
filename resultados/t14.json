@@ -1,0 +1,24 @@
+{
+  "titulo_alvo": "American Beauty",
+  "subconsulta": {
+    "sql": "SELECT title, votes FROM movie WHERE votes > (SELECT votes FROM movie WHERE title = 'American Beauty')",
+    "linhas": 9,
+    "nos": [
+      "Index Scan",
+      "Index Scan"
+    ],
+    "custo": 43.34,
+    "tempo_ms": 0.096
+  },
+  "juncao": {
+    "sql": "SELECT m.title, m.votes FROM movie m JOIN movie a ON m.votes > a.votes WHERE a.title = 'American Beauty'",
+    "linhas": 9,
+    "nos": [
+      "Nested Loop",
+      "Index Scan",
+      "Index Scan"
+    ],
+    "custo": 49.49,
+    "tempo_ms": 0.025
+  }
+}

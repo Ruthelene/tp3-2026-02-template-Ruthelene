@@ -1,0 +1,159 @@
+{
+  "total_linhas": 1844,
+  "pequena": {
+    "sql": "SELECT * FROM movie WHERE votes > 35000",
+    "linhas": 6,
+    "nos": [
+      "Index Scan"
+    ],
+    "custo": 8.49,
+    "tempo_ms": 0.015,
+    "buffers": {
+      "hit": 3,
+      "read": 0
+    }
+  },
+  "grande": {
+    "sql": "SELECT * FROM movie WHERE votes > 1000",
+    "linhas": 1516,
+    "nos": [
+      "Seq Scan"
+    ],
+    "custo": 38.05,
+    "tempo_ms": 0.353,
+    "buffers": {
+      "hit": 15,
+      "read": 0
+    }
+  },
+  "fracao_grande": 0.8221258134490239,
+  "limiar_votos_menor_que": 1550,
+  "linhas_no_limiar": 677,
+  "fracao_no_limiar": 0.36713665943600865,
+  "plano_por_x": [
+    [
+      50,
+      "Index Scan"
+    ],
+    [
+      100,
+      "Index Scan"
+    ],
+    [
+      150,
+      "Index Scan"
+    ],
+    [
+      200,
+      "Index Scan"
+    ],
+    [
+      250,
+      "Index Scan"
+    ],
+    [
+      300,
+      "Index Scan"
+    ],
+    [
+      350,
+      "Index Scan"
+    ],
+    [
+      400,
+      "Index Scan"
+    ],
+    [
+      450,
+      "Index Scan"
+    ],
+    [
+      500,
+      "Index Scan"
+    ],
+    [
+      550,
+      "Index Scan"
+    ],
+    [
+      600,
+      "Index Scan"
+    ],
+    [
+      650,
+      "Index Scan"
+    ],
+    [
+      700,
+      "Index Scan"
+    ],
+    [
+      750,
+      "Index Scan"
+    ],
+    [
+      800,
+      "Index Scan"
+    ],
+    [
+      850,
+      "Index Scan"
+    ],
+    [
+      900,
+      "Index Scan"
+    ],
+    [
+      950,
+      "Index Scan"
+    ],
+    [
+      1000,
+      "Index Scan"
+    ],
+    [
+      1050,
+      "Index Scan"
+    ],
+    [
+      1100,
+      "Index Scan"
+    ],
+    [
+      1150,
+      "Index Scan"
+    ],
+    [
+      1200,
+      "Index Scan"
+    ],
+    [
+      1250,
+      "Index Scan"
+    ],
+    [
+      1300,
+      "Index Scan"
+    ],
+    [
+      1350,
+      "Index Scan"
+    ],
+    [
+      1400,
+      "Index Scan"
+    ],
+    [
+      1450,
+      "Index Scan"
+    ],
+    [
+      1500,
+      "Index Scan"
+    ],
+    [
+      1550,
+      "Seq Scan"
+    ]
+  ]
+}

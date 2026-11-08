@@ -1,0 +1,97 @@
+{
+  "antes": {
+    "prefixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE 'C%'",
+      "linhas": 130,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05
+    },
+    "prefixo_substr": {
+      "sql": "SELECT * FROM movie WHERE substr(title, 1, 1) = 'C'",
+      "linhas": 130,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 42.66
+    },
+    "sufixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE '%I'",
+      "linhas": 26,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05
+    },
+    "sufixo_reverse": {
+      "sql": "SELECT * FROM movie WHERE reverse(title) LIKE 'I%'",
+      "linhas": 26,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 42.66
+    }
+  },
+  "depois": {
+    "prefixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE 'C%'",
+      "linhas": 130,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 22.19,
+      "nos_sem_seqscan": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo_sem_seqscan": 22.19
+    },
+    "prefixo_substr": {
+      "sql": "SELECT * FROM movie WHERE substr(title, 1, 1) = 'C'",
+      "linhas": 130,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 22.23,
+      "nos_sem_seqscan": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo_sem_seqscan": 22.23
+    },
+    "sufixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE '%I'",
+      "linhas": 26,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05,
+      "nos_sem_seqscan": [
+        "Seq Scan"
+      ],
+      "custo_sem_seqscan": 10000000038.05
+    },
+    "sufixo_reverse": {
+      "sql": "SELECT * FROM movie WHERE reverse(title) LIKE 'I%'",
+      "linhas": 26,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 20.53,
+      "nos_sem_seqscan": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo_sem_seqscan": 20.53
+    }
+  },
+  "indices_criados": {
+    "movie_title_pattern": "CREATE INDEX movie_title_pattern ON movie (title text_pattern_ops)",
+    "movie_title_substr": "CREATE INDEX movie_title_substr ON movie (substr(title, 1, 1))",
+    "movie_title_reverse": "CREATE INDEX movie_title_reverse ON movie (reverse(title) text_pattern_ops)"
+  }
+}
